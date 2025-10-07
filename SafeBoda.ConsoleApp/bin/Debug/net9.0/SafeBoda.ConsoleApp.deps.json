@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SafeBoda.ConsoleApp/1.0.0": {
+        "dependencies": {
+          "SafeBoda.Application": "1.0.0"
+        },
+        "runtime": {
+          "SafeBoda.ConsoleApp.dll": {}
+        }
+      },
+      "SafeBoda.Application/1.0.0": {
+        "dependencies": {
+          "SafeBoda.Core": "1.0.0"
+        },
+        "runtime": {
+          "SafeBoda.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SafeBoda.Core/1.0.0": {
+        "runtime": {
+          "SafeBoda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SafeBoda.ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SafeBoda.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SafeBoda.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
