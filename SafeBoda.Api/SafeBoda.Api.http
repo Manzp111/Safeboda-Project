@@ -1,0 +1,6 @@
+@SafeBoda.Api_HostAddress = http://localhost:5072
+
+GET {{SafeBoda.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
