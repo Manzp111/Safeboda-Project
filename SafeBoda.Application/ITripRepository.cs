@@ -6,6 +6,7 @@ namespace SafeBoda.Application;
 public interface ITripRepository
 {
     List<Trip> GetActiveTrips();
+    Task AddTrip(Trip trip);
 
     
 

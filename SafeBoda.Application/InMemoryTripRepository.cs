@@ -9,23 +9,30 @@ namespace SafeBoda.Application;
 
 public class InMemoryTripRepository : ITripRepository
 {
-    
+    private readonly List<Trip> _trips = new List<Trip>();
+        public InMemoryTripRepository()
+        {
+            var l1Start = new Location(30, 70);
+            var l1End = new Location(40, 80);
+            var t1 = new Trip(Guid.NewGuid(), Guid.NewGuid(), Guid.NewGuid(), l1Start, l1End, 600, DateTime.Now);
+            _trips.Add(t1);
+        }
+
 public List<Trip> GetActiveTrips()
     {
-        var l1Stsrt = new Location(30, 70);
-        var l1end = new Location(40, 80);
-        var l2Stsrt = new Location(20, 50);
-        var l2end = new Location(10, 80);
-     var t1=new Trip(Guid.NewGuid(),Guid.NewGuid(),Guid.NewGuid(),l1Stsrt,l1end,600,requestTime: DateTime.Now);
-     var t2=new Trip(Guid.NewGuid(),Guid.NewGuid(),Guid.NewGuid(),l2Stsrt,l2end,700,requestTime: DateTime.Now);
+        return _trips;
 
-    List<Trip> trips = new List<Trip>{t1,t2};
-        
-        
-        return trips;
     }
 
-     
-    
+ public Task AddTrip(Trip trip)
+    {
+        _trips.Add(trip);
+        return Task.CompletedTask;
+
+        
+        
+    }
+
+
 
 }
