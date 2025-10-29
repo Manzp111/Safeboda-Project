@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj",
         "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Core\\obj\\",
+=======
+    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj",
+        "projectName": "SafeBoda.Core",
+        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj",
+        "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\obj\\",
+>>>>>>> 69e73f0 (creating Database logic colled safeboda.core)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\highe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +73,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 69e73f0 (creating Database logic colled safeboda.core)
         }
       }
     }
