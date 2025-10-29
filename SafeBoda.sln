@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Core", "SafeBoda.Core\SafeBoda.Core.csproj", "{981C8286-9680-4DC0-923D-7B9BE1E3EB09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Application", "SafeBoda.Application\SafeBoda.Application.csproj", "{57C46109-70E3-4FB8-B368-B44AEAA40295}"
@@ -10,15 +11,55 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Infrastructure", "SafeBoda.Infrastructure\SafeBoda.Infrastructure.csproj", "{35A9A9B4-48BD-4510-B5B0-97B8E72E2E11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Api", "SafeBoda.Api\SafeBoda.Api.csproj", "{EC064257-3298-4229-81E5-3758516EB507}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Core", "SafeBoda.Core\SafeBoda.Core.csproj", "{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Application", "SafeBoda.Application\SafeBoda.Application.csproj", "{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}"
+>>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+<<<<<<< HEAD
 		Release|Any CPU = Release|Any CPU
+=======
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|x64.Build.0 = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|x64.ActiveCfg = Release|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|x64.Build.0 = Release|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2FC84C6-6BBD-4DA8-8C27-73D5C8D5BCC8}.Release|x86.Build.0 = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|x64.Build.0 = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Debug|x86.Build.0 = Debug|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x64.ActiveCfg = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x64.Build.0 = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x86.ActiveCfg = Release|Any CPU
+		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x86.Build.0 = Release|Any CPU
+>>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{981C8286-9680-4DC0-923D-7B9BE1E3EB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{981C8286-9680-4DC0-923D-7B9BE1E3EB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -37,4 +78,6 @@ Global
 		{EC064257-3298-4229-81E5-3758516EB507}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC064257-3298-4229-81E5-3758516EB507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+=======
+>>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
 EndGlobal

@@ -14,10 +14,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f774f64233ca0532b378f75645a370a797f7430")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f59fa2c4c665455d35e333a953688d9a69aaa98")]
 >>>>>>> bffb53d (creating Safeboda.application for business logic)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bffb53d310ed5be85a3072ebc97807ac68344fec")]
+>>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
 [assembly: System.Reflection.AssemblyProductAttribute("SafeBoda.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeBoda.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
