@@ -5,11 +5,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
-<<<<<<< HEAD
-      "applicationUrl": "http://localhost:5072",
-=======
       "applicationUrl": "http://localhost:5049",
->>>>>>> 91ae9ac (adding get method)
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -18,11 +14,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
-<<<<<<< HEAD
-      "applicationUrl": "https://localhost:7000;http://localhost:5072",
-=======
       "applicationUrl": "https://localhost:7248;http://localhost:5049",
->>>>>>> 91ae9ac (adding get method)
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

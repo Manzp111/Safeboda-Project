@@ -1,64 +1,92 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
-using SafeBoda.Application;
 using SafeBoda.Core;
+using SafeBoda.Infrastructure;
+using System;
+using System.Threading.Tasks;
 
-
-namespace SafeBodaContoller;
-
-
-[ApiController]
-[Route("trip")]
-public class TripController : ControllerBase
+namespace SafeBoda.Api.Controllers
 {
-
-
-    // ITripRepository name=new ITripRepository();
-    private readonly ITripRepository _trips;
-    
-    public TripController()
+    [ApiController]
+    [Route("trip")]
+    public class TripController : ControllerBase
     {
-        _trips=new InMemoryTripRepository();
-        
-    }
+        private readonly ITripRepositoryDb _tripRepo;
 
-
-    [HttpGet("list")]
-    public IActionResult Trips()
-    {
-        var triplist = _trips.GetActiveTrips();
-        return Ok(triplist);
-    }
-
-    [HttpPost("add")]
-    public IActionResult CreateTrip([FromBody] Trip trip)
-    {
-    var existingTrip = _trips.GetActiveTrips().FirstOrDefault(t => t.Id == trip.Id);
-    if (existingTrip != null)
-    {
-        return BadRequest(new
+        public TripController(ITripRepositoryDb tripRepo)
         {
-            status = false,
-            message = $"Trip with ID {trip.Id} already exists",
-            data = (object?)null
-        });
-    }
+            _tripRepo = tripRepo;
+        }
 
-        _trips.AddTrip(trip);
-        return Ok(new
+        [HttpGet("list")]
+        public async Task<IActionResult> GetTrips()
         {
-            status=true,
-            message="trip created successfully",
-            data=trip,
+            var trips = await _tripRepo.GetActiveTripsAsync();
+            return Ok(new
+            {
+                success = true,
+                message = "Trips retrieved successfully",
+                data = new
+                {
+                    number_of_trips = trips.Count,
+                    trip = trips
+                }
+            });
+        }
+
+        [HttpGet("detail{id}")]
+        public async Task<IActionResult> GetTrip(Guid id)
+        {
+            var trip = await _tripRepo.GetTripByIdAsync(id);
+            if (trip == null) return NotFound();
+            return Ok(new
+            {
+                success = true,
+                message = "Trip retrieved successfully",
+                data = trip
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateTrip([FromBody] Trip trip)
+        {
+            await _tripRepo.AddTripAsync(trip);
+            return CreatedAtAction(nameof(GetTrip), new { id = trip.Id }, trip);
+        }
+
+        [HttpPut("update{id}")] // Update entire trip
+        public async Task<IActionResult> UpdateTrip(Guid id, [FromBody] Trip trip)
+        {
+            var updated = await _tripRepo.UpdateTripAsync(id, trip);
+            if (updated == null) return NotFound();
+            return Ok(new {
+                success = true,
+                message = "Trip updated successfully",
+                data = updated
+            });
+        }
+
+        [HttpPatch("partialUpdate{id}")] // Partial update of trip
+        public async Task<IActionResult> PatchTrip(Guid id, [FromBody] Trip trip)
+        {
+            var patched = await _tripRepo.PatchTripAsync(id, trip);
+            if (patched == null) return NotFound();
+            return Ok(new {
+                success = true,
+                message = "Trip partially updated successfully",
+                data = patched
+            });
+        }
+
+        [HttpDelete("delete{id}")] // Delete trip
+        public async Task<IActionResult> DeleteTrip(Guid id)
+        {
+            var deleted = await _tripRepo.DeleteTripAsync(id);
+            if (deleted == null) return NotFound();
+            return Ok(new {
+                success = true,
+                message = "Trip deleted successfully",
                 
+            });
+        }
     }
-        
-        );}
-        
-    
- 
-
-
-
 }
-

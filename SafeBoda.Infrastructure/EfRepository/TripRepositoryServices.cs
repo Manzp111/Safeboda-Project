@@ -8,12 +8,13 @@ namespace SafeBoda.Infrastructure
 {
     public class EfTripRepository : ITripRepositoryDb
     {
-        private readonly SafeBodaDbContext _db;
+        private readonly SafeBodaDbContext _dbcontext;
 
-        public EfTripRepository(SafeBodaDbContext db)
+        public EfTripRepository(SafeBodaDbContext dbContext)
         {
-            _db = db;
+            _dbcontext = dbContext;
         }
+
 
         public async Task<List<Trip>> GetActiveTripsAsync()
         {
@@ -27,8 +28,23 @@ namespace SafeBoda.Infrastructure
 
         public async Task AddTripAsync(Trip trip)
         {
-            _db.Trips.Add(trip);
-            await _db.SaveChangesAsync();
+            try
+            {
+                var existing = await _db.Trips.FindAsync(trip.Id);
+                if (existing != null)
+                {
+                    throw new InvalidOperationException("Trip with the same ID already exists."); // Prevent duplicate IDs
+                }
+                await _db.Trips.AddAsync(trip);
+                await _db.SaveChangesAsync();
+
+
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception("An error occurred while adding the trip.", ex);
+            }
         }
 
         public async Task<Trip?> UpdateTripAsync(Guid tripId, Trip trip)
