@@ -1,47 +1,64 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using SafeBoda.Application;
 using SafeBoda.Core;
 
-namespace SafeBoda.Api.Controllers;
+
+namespace SafeBodaContoller;
+
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("trip")]
 public class TripController : ControllerBase
 {
-    private readonly ITripRepository _tripRepository;
 
-    public TripController(ITripRepository tripRepository)
+
+    // ITripRepository name=new ITripRepository();
+    private readonly ITripRepository _trips;
+    
+    public TripController()
     {
-        _tripRepository = tripRepository;
+        _trips=new InMemoryTripRepository();
+        
     }
 
-    [HttpGet]
-    public IActionResult GetAllActiveTrips() => Ok(_tripRepository.GetActiveTrips());
+
+    [HttpGet("list")]
+    public IActionResult Trips()
+    {
+        var triplist = _trips.GetActiveTrips();
+        return Ok(triplist);
+    }
 
     [HttpPost("add")]
-    public IActionResult CreateTrip([FromBody] TripRequest request)
+    public IActionResult CreateTrip([FromBody] Trip trip)
     {
-        var newTrip = new Trip(
-            Id: Guid.NewGuid(),
-            RiderId: request.RiderId,
-            DriverId: Guid.Empty,
-            Start: new Location(request.StartLatitude, request.StartLongitude),
-            End: new Location(request.EndLatitude, request.EndLongitude),
-            Fare: 0,
-            RequestTime: DateTime.UtcNow
-        );
-
-        _tripRepository.AddTrip(newTrip);
-
-        return CreatedAtAction(nameof(GetAllActiveTrips), new { id = newTrip.Id }, newTrip);
+    var existingTrip = _trips.GetActiveTrips().FirstOrDefault(t => t.Id == trip.Id);
+    if (existingTrip != null)
+    {
+        return BadRequest(new
+        {
+            status = false,
+            message = $"Trip with ID {trip.Id} already exists",
+            data = (object?)null
+        });
     }
+
+        _trips.AddTrip(trip);
+        return Ok(new
+        {
+            status=true,
+            message="trip created successfully",
+            data=trip,
+                
+    }
+        
+        );}
+        
+    
+ 
+
+
+
 }
 
-public class TripRequest
-{
-    public Guid RiderId { get; set; }
-    public double StartLatitude { get; set; }
-    public double StartLongitude { get; set; }
-    public double EndLatitude { get; set; }
-    public double EndLongitude { get; set; }
-}

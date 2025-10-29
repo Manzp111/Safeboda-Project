@@ -16,6 +16,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f774f64233ca0532b378f75645a370a797f7430")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0affeff38b767d9d10c003f4085b65754f16dc68")]
@@ -26,6 +27,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1228f2b79a171f958087961bee65854ebac45777")]
 >>>>>>> d69e6a3 (rebasing to remote commit)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d69e6a3e07c89fe2fb1900bc55d2dbd4ade814de")]
+>>>>>>> ec50d1c (adding web api with controller)
 [assembly: System.Reflection.AssemblyProductAttribute("SafeBoda.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeBoda.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
