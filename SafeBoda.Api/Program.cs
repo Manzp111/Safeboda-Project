@@ -24,6 +24,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 =======
 builder.Services.AddScoped<ITripRepository, InMemoryTripRepository>();
+// builder.Services.AddSingleton<ITripRepository, InMemoryTripRepository>();
+
 
 // Swagger / OpenAPI
 builder.Services.AddEndpointsApiExplorer();

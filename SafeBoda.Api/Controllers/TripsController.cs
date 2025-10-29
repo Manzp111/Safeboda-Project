@@ -1,77 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SafeBoda.Core;
 using SafeBoda.Application;
+using SafeBoda.Core;
 
-namespace SafeBoda.Api.Controllers
+namespace SafeBoda.Api.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class TripController : ControllerBase
 {
-    [ApiController]
-    [Route("trip")]
-    
-    public class Trips : ControllerBase
+    private readonly ITripRepository _tripRepository;
+
+    public TripController(ITripRepository tripRepository)
     {
-        private readonly ITripRepository _tripRepository;
+        _tripRepository = tripRepository;
+    }
 
-        public Trips(ITripRepository tripRepository)
-        {
-            _tripRepository = tripRepository;
-        }
+    [HttpGet]
+    public IActionResult GetAllActiveTrips() => Ok(_tripRepository.GetActiveTrips());
 
-        // GET: api/trips/list/
-        [HttpGet("list")]
-        public IActionResult GetAllActiveTrips()
-        {
-            var trips= _tripRepository.GetActiveTrips();
-            return Ok(trips);
-        }
-        
-        // Post :api/trips/add
-        [HttpPost("add")]
-        public IActionResult CreateTripRequest([FromBody] TripRequest request)
-        {
-            // Create new trip using the record constructor
-            var newTrip = new Trip(
-                Id: Guid.NewGuid(),
-                RiderId: request.RiderId,
-                DriverId: Guid.Empty, // Unassigned driver
-                Start: new Location(request.StartLatitude, request.StartLongitude),
-                End: new Location(request.EndLatitude, request.EndLongitude),
-                Fare: 0, // Simulate fare calculation
-                RequestTime: DateTime.UtcNow
-            );
+    [HttpPost("add")]
+    public IActionResult CreateTrip([FromBody] TripRequest request)
+    {
+        var newTrip = new Trip(
+            Id: Guid.NewGuid(),
+            RiderId: request.RiderId,
+            DriverId: Guid.Empty,
+            Start: new Location(request.StartLatitude, request.StartLongitude),
+            End: new Location(request.EndLatitude, request.EndLongitude),
+            Fare: 0,
+            RequestTime: DateTime.UtcNow
+        );
 
-            
-            return CreatedAtAction(nameof(GetAllActiveTrips), new { id = newTrip.Id }, newTrip);
-        }
-        
-        [HttpGet("{id}")]
-        public IActionResult GetTripById(Guid id)
-        {
-            var trip = _tripRepository.GetTripById(id);
-            if (trip == null)
-                return NotFound($"Trip with ID {id} not found.");
+        _tripRepository.AddTrip(newTrip);
 
-            return Ok(trip);
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult DeleteTrip(Guid id)
-        {
-            var trip = _tripRepository.GetTripById(id);
-            if (trip == null)
-            {
-                return NotFound($"Trip with ID {id} not found.");
-            }
-
-            return NoContent();
-
-
-        }
-
-
+        return CreatedAtAction(nameof(GetAllActiveTrips), new { id = newTrip.Id }, newTrip);
     }
 }
 
-
-
-    
-    
+public class TripRequest
+{
+    public Guid RiderId { get; set; }
+    public double StartLatitude { get; set; }
+    public double StartLongitude { get; set; }
+    public double EndLatitude { get; set; }
+    public double EndLongitude { get; set; }
+}
