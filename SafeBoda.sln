@@ -17,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.Application", "SafeBoda.Application\SafeBoda.Application.csproj", "{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}"
 >>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeBoda.ConsoleApp", "SafeBoda.ConsoleApp\SafeBoda.ConsoleApp.csproj", "{00C3D434-CF28-45C2-B70B-D03A124A8344}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,7 +56,22 @@ Global
 		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x64.Build.0 = Release|Any CPU
 		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x86.ActiveCfg = Release|Any CPU
 		{BDE336A6-D58B-4EA9-82AF-4D50A6823B8D}.Release|x86.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 >>>>>>> 37e0708 (adding interface  ItripRepository to get all trip)
+=======
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|x64.Build.0 = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Debug|x86.Build.0 = Debug|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|x64.ActiveCfg = Release|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|x64.Build.0 = Release|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|x86.ActiveCfg = Release|Any CPU
+		{00C3D434-CF28-45C2-B70B-D03A124A8344}.Release|x86.Build.0 = Release|Any CPU
+>>>>>>> 0affeff (adding readme file)
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
