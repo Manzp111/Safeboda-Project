@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "Emzeo5Mq944=",
   "success": true,
   "projectFilePath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj",
@@ -92,8 +93,11 @@
     "C:\\Users\\highe\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
 =======
   "dgSpecHash": "6qhh0xQ4KHE=",
+=======
+  "dgSpecHash": "3Bz1QpzGUmA=",
+>>>>>>> d69e6a3 (rebasing to remote commit)
   "success": true,
-  "projectFilePath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\SafeBoda.Api.csproj",
+  "projectFilePath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\highe\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
     "C:\\Users\\highe\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",

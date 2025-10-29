@@ -15,6 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f774f64233ca0532b378f75645a370a797f7430")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0affeff38b767d9d10c003f4085b65754f16dc68")]
@@ -22,6 +23,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91ae9ac17f6206e4abfd8d229967f97605a4782c")]
 >>>>>>> 52e6cd6 (adding post method)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1228f2b79a171f958087961bee65854ebac45777")]
+>>>>>>> d69e6a3 (rebasing to remote commit)
 [assembly: System.Reflection.AssemblyProductAttribute("SafeBoda.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeBoda.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

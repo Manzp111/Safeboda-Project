@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\WebApplication1.Api\\WebApplication1.Api.csproj": {}
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\WebApplication1.Api\\WebApplication1.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\WebApplication1.Api\\WebApplication1.Api.csproj": {
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\WebApplication1.Api\\WebApplication1.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\WebApplication1.Api\\WebApplication1.Api.csproj",
+        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\WebApplication1.Api\\WebApplication1.Api.csproj",
         "projectName": "WebApplication1.Api",
-        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\WebApplication1.Api\\WebApplication1.Api.csproj",
+        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\WebApplication1.Api\\WebApplication1.Api.csproj",
         "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\WebApplication1.Api\\obj\\",
+        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\WebApplication1.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\highe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

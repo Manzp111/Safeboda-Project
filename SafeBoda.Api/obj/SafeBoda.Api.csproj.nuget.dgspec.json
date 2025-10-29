@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj": {}
   },
   "projects": {
@@ -15,17 +16,24 @@
         "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Api\\obj\\",
 =======
     "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\SafeBoda.Api.csproj": {}
+=======
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj": {}
+>>>>>>> d69e6a3 (rebasing to remote commit)
   },
   "projects": {
-    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\SafeBoda.Api.csproj": {
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\SafeBoda.Api.csproj",
+        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj",
         "projectName": "SafeBoda.Api",
-        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\SafeBoda.Api.csproj",
+        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\SafeBoda.Api.csproj",
         "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
+<<<<<<< HEAD
         "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Api\\obj\\",
 >>>>>>> 91ae9ac (adding get method)
+=======
+        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Api\\obj\\",
+>>>>>>> d69e6a3 (rebasing to remote commit)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\highe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,12 +49,17 @@
             "targetAlias": "net9.0",
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Infrastructure\\SafeBoda.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Infrastructure\\SafeBoda.Infrastructure.csproj"
 =======
               "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\SafeBoda.Application.csproj": {
                 "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\SafeBoda.Application.csproj"
 >>>>>>> 91ae9ac (adding get method)
+=======
+              "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\SafeBoda.Application.csproj": {
+                "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\SafeBoda.Application.csproj"
+>>>>>>> d69e6a3 (rebasing to remote commit)
               }
             }
           }
@@ -114,6 +127,7 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -128,17 +142,20 @@
         "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\rrr\\module-3-safeboda-data-persistence-with-ef-core-Manzp111\\SafeBoda.Core\\obj\\",
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d69e6a3 (rebasing to remote commit)
         }
       }
     },
-    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\SafeBoda.Application.csproj": {
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\SafeBoda.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\SafeBoda.Application.csproj",
+        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\SafeBoda.Application.csproj",
         "projectName": "SafeBoda.Application",
-        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\SafeBoda.Application.csproj",
+        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\SafeBoda.Application.csproj",
         "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Application\\obj\\",
+        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\highe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -153,8 +170,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj": {
-                "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj"
+              "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj": {
+                "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj"
               }
             }
           }
@@ -190,19 +207,23 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj": {
+    "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj",
+        "projectUniqueName": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj",
         "projectName": "SafeBoda.Core",
-        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\SafeBoda.Core.csproj",
+        "projectPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\SafeBoda.Core.csproj",
         "packagesPath": "C:\\Users\\highe\\.nuget\\packages\\",
+<<<<<<< HEAD
         "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\.net Work\\SafeBoda.Core\\obj\\",
 >>>>>>> 91ae9ac (adding get method)
+=======
+        "outputPath": "C:\\Users\\highe\\OneDrive\\Desktop\\p1\\module-1-safeboda-foundation-setup-Manzp111\\SafeBoda.Core\\obj\\",
+>>>>>>> d69e6a3 (rebasing to remote commit)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\highe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -250,6 +271,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
 <<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
@@ -334,6 +356,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
 >>>>>>> 91ae9ac (adding get method)
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d69e6a3 (rebasing to remote commit)
         }
       }
     }
