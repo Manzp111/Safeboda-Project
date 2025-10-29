@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SafeBoda.Application
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Application\
+=======
+build_property.ProjectDir = c:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\
+>>>>>>> bffb53d (creating Safeboda.application for business logic)
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
