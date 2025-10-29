@@ -8,17 +8,23 @@
     ".NETCoreApp,Version=v9.0": {
       "SafeBoda.Api/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.AspNetCore.OpenApi": "9.0.10",
           "Microsoft.EntityFrameworkCore": "9.0.10",
           "Microsoft.EntityFrameworkCore.Design": "9.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.10",
           "SafeBoda.Infrastructure": "1.0.0",
+=======
+          "Microsoft.AspNetCore.OpenApi": "9.0.9",
+          "SafeBoda.Application": "1.0.0",
+>>>>>>> 91ae9ac (adding get method)
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "runtime": {
           "SafeBoda.Api.dll": {}
         }
       },
+<<<<<<< HEAD
       "Azure.Core/1.38.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
@@ -63,11 +69,15 @@
         }
       },
       "Microsoft.AspNetCore.OpenApi/9.0.10": {
+=======
+      "Microsoft.AspNetCore.OpenApi/9.0.9": {
+>>>>>>> 91ae9ac (adding get method)
         "dependencies": {
           "Microsoft.OpenApi": "1.6.25"
         },
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+<<<<<<< HEAD
             "assemblyVersion": "9.0.10.0",
             "fileVersion": "9.0.1025.47517"
           }
@@ -505,10 +515,15 @@
           "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "assemblyVersion": "9.0.10.0",
             "fileVersion": "9.0.1025.47514"
+=======
+            "assemblyVersion": "9.0.9.0",
+            "fileVersion": "9.0.925.42003"
+>>>>>>> 91ae9ac (adding get method)
           }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/9.0.0": {},
+<<<<<<< HEAD
       "Microsoft.Extensions.Caching.Abstractions/9.0.10": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.10"
@@ -713,6 +728,8 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+=======
+>>>>>>> 91ae9ac (adding get method)
       "Microsoft.OpenApi/1.6.25": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -721,6 +738,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -756,6 +774,8 @@
           }
         }
       },
+=======
+>>>>>>> 91ae9ac (adding get method)
       "Swashbuckle.AspNetCore/9.0.6": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "9.0.0",
@@ -794,6 +814,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -1047,6 +1068,16 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+=======
+      "SafeBoda.Application/1.0.0": {
+        "dependencies": {
+          "SafeBoda.Core": "1.0.0"
+        },
+        "runtime": {
+          "SafeBoda.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+>>>>>>> 91ae9ac (adding get method)
           }
         }
       },
@@ -1057,6 +1088,7 @@
             "fileVersion": "1.0.0.0"
           }
         }
+<<<<<<< HEAD
       },
       "SafeBoda.Infrastructure/1.0.0": {
         "dependencies": {
@@ -1070,6 +1102,8 @@
             "fileVersion": "1.0.0.0"
           }
         }
+=======
+>>>>>>> 91ae9ac (adding get method)
       }
     }
   },
@@ -1079,6 +1113,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "Azure.Core/1.38.0": {
       "type": "package",
       "serviceable": true,
@@ -1232,6 +1267,14 @@
       "sha512": "sha512-2c940sdoibS6FjKmSZvApIxWDcsYpjj9Jgnjt4BBpsAuaJOjT26jStM9Nc2Mvxp+054E0pqEZQHRyoug4vmeIQ==",
       "path": "microsoft.entityframeworkcore.sqlserver/9.0.10",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.9.0.10.nupkg.sha512"
+=======
+    "Microsoft.AspNetCore.OpenApi/9.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Sina0gS/CTYt9XG6DUFPdXOmJui7e551U0kO2bIiDk3vZ2sctxxenN+cE1a5CrUpjIVZfZr32neWYYRO+Piaw==",
+      "path": "microsoft.aspnetcore.openapi/9.0.9",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512"
+>>>>>>> 91ae9ac (adding get method)
     },
     "Microsoft.Extensions.ApiDescription.Server/9.0.0": {
       "type": "package",
@@ -1240,6 +1283,7 @@
       "path": "microsoft.extensions.apidescription.server/9.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Caching.Abstractions/9.0.10": {
       "type": "package",
       "serviceable": true,
@@ -1380,6 +1424,8 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+=======
+>>>>>>> 91ae9ac (adding get method)
     "Microsoft.OpenApi/1.6.25": {
       "type": "package",
       "serviceable": true,
@@ -1387,6 +1433,7 @@
       "path": "microsoft.openapi/1.6.25",
       "hashPath": "microsoft.openapi.1.6.25.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1408,6 +1455,8 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 91ae9ac (adding get method)
     "Swashbuckle.AspNetCore/9.0.6": {
       "type": "package",
       "serviceable": true,
@@ -1436,6 +1485,7 @@
       "path": "swashbuckle.aspnetcore.swaggerui/9.0.6",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.9.0.6.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.ClientModel/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1675,11 +1725,18 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "SafeBoda.Core/1.0.0": {
+=======
+    "SafeBoda.Application/1.0.0": {
+>>>>>>> 91ae9ac (adding get method)
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "SafeBoda.Infrastructure/1.0.0": {
+=======
+    "SafeBoda.Core/1.0.0": {
+>>>>>>> 91ae9ac (adding get method)
       "type": "project",
       "serviceable": false,
       "sha512": ""

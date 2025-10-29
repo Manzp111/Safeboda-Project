@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\appsettings.json
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.staticwebassets.endpoints.json
@@ -168,3 +169,46 @@ C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-c
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\highe\OneDrive\Desktop\rrr\module-3-safeboda-data-persistence-with-ef-core-Manzp111\SafeBoda.Api\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+=======
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\appsettings.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.staticwebassets.endpoints.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.exe
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.deps.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.runtimeconfig.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Api.pdb
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.csproj.AssemblyReference.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.AssemblyInfoInputs.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.AssemblyInfo.cs
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.csproj.CoreCompileInputs.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.sourcelink.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\scopedcss\bundle\SafeBoda.Api.styles.css
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.16801DE2.Up2Date
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\refint\SafeBoda.Api.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.pdb
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\SafeBoda.Api.genruntimeconfig.cache
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\obj\Debug\net9.0\ref\SafeBoda.Api.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Application.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Core.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Application.pdb
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\SafeBoda.Core.pdb
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Api\bin\Debug\net9.0\http-client.env.json
+>>>>>>> 91ae9ac (adding get method)

@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 @SafeBoda.Api_HostAddress = http://localhost:5072
+=======
+@SafeBoda.Api_HostAddress = http://localhost:5049
+@SafeBoda = variable value
+>>>>>>> 91ae9ac (adding get method)
 
 GET {{SafeBoda.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
+<<<<<<< HEAD
 ###
+=======
+
+GET {{SafeBoda.Api_HostAddress}}/api/trips/list/
+Accept :application/json
+
+>>>>>>> 91ae9ac (adding get method)
