@@ -18,3 +18,4 @@ C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.ConsoleApp\obj\Debug\net9.0\r
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.ConsoleApp\obj\Debug\net9.0\SafeBoda.ConsoleApp.pdb
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.ConsoleApp\obj\Debug\net9.0\SafeBoda.ConsoleApp.genruntimeconfig.cache
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.ConsoleApp\obj\Debug\net9.0\ref\SafeBoda.ConsoleApp.dll
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.ConsoleApp\obj\Debug\net9.0\SafeBoda.ConsoleApp.sourcelink.json

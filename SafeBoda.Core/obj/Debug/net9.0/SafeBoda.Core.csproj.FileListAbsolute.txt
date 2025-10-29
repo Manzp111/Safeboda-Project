@@ -23,4 +23,8 @@ C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Core\obj\Debug\net9.0\SafeBod
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Core\obj\Debug\net9.0\refint\SafeBoda.Core.dll
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Core\obj\Debug\net9.0\SafeBoda.Core.pdb
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Core\obj\Debug\net9.0\ref\SafeBoda.Core.dll
+<<<<<<< HEAD
 >>>>>>> 0affeff (adding readme file)
+=======
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Core\obj\Debug\net9.0\SafeBoda.Core.sourcelink.json
+>>>>>>> 1228f2b (adding)

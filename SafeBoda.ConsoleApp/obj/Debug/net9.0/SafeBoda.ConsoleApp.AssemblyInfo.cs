@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SafeBoda.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fb4c8856eead56423c03401bd5b7fba2cc851c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0affeff38b767d9d10c003f4085b65754f16dc68")]
 [assembly: System.Reflection.AssemblyProductAttribute("SafeBoda.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeBoda.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,13 +1,17 @@
 using SafeBoda.Core;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SafeBoda.Application;
 
 public class InMemoryTripRepository : ITripRepository
 {
-    public IEnumerable<Trip> GetActiveTrips()
+    // Store trips in a list so we can query by ID
+    private readonly List<Trip> _trips;
+
+    public InMemoryTripRepository()
     {
-        return new List<Trip>
+        _trips = new List<Trip>
         {
             new Trip(
                 Guid.NewGuid(),
@@ -29,4 +33,14 @@ public class InMemoryTripRepository : ITripRepository
             )
         };
     }
+
+    public IEnumerable<Trip> GetActiveTrips() => _trips;
+
+    
+    public Trip? GetTripById(Guid id) => _trips.FirstOrDefault(t => t.Id == id);
+
+    
+    public void AddTrip(Trip  trip) => _trips.Add(trip);
+    
+    public void DeleteTrip(Trip trip) => _trips.Remove(trip);
 }

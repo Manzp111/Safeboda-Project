@@ -14,6 +14,7 @@ C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\obj\Debug\net9.0\
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\obj\Debug\net9.0\SafeBoda.Application.pdb
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\obj\Debug\net9.0\ref\SafeBoda.Application.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\obj\Debug\net9.0\SafeBoda.Application.sourcelink.json
 C:\Users\highe\OneDrive\Desktop\p1\module-1-safeboda-foundation-setup-Manzp111\SafeBoda.Application\bin\Debug\net9.0\SafeBoda.Application.deps.json
 C:\Users\highe\OneDrive\Desktop\p1\module-1-safeboda-foundation-setup-Manzp111\SafeBoda.Application\bin\Debug\net9.0\SafeBoda.Application.dll
@@ -33,3 +34,6 @@ C:\Users\highe\OneDrive\Desktop\p1\module-1-safeboda-foundation-setup-Manzp111\S
 C:\Users\highe\OneDrive\Desktop\p1\module-1-safeboda-foundation-setup-Manzp111\SafeBoda.Application\obj\Debug\net9.0\ref\SafeBoda.Application.dll
 =======
 >>>>>>> 0affeff (adding readme file)
+=======
+C:\Users\highe\OneDrive\Desktop\.net Work\SafeBoda.Application\obj\Debug\net9.0\SafeBoda.Application.sourcelink.json
+>>>>>>> 1228f2b (adding)
