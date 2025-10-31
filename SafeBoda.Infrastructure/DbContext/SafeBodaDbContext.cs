@@ -14,7 +14,7 @@ namespace SafeBoda.Infrastructure
         public DbSet<Rider> Riders { get; set; }
         public DbSet<Location> Locations { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
     base.OnModelCreating(modelBuilder);
 

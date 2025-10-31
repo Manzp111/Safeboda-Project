@@ -49,6 +49,16 @@ namespace SafeBoda.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateTrip([FromBody] Trip trip)
         {
+            var tripExists = await _tripRepo.GetTripByIdAsync(trip.Id);
+            if (tripExists != null)
+            {
+                System.Console.WriteLine("Trip with the same ID already exists.");
+                return Conflict(new
+                {
+                    success = false,
+                    message = "Trip with the same ID already exists."
+                });
+            }
             await _tripRepo.AddTripAsync(trip);
             return CreatedAtAction(nameof(GetTrip), new { id = trip.Id }, trip);
         }
