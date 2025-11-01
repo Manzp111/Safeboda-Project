@@ -3,7 +3,7 @@ using SafeBoda.Core;
 
 namespace SafeBoda.Infrastructure
 {
-    public class SafeBodaDbContext : DbContext
+    public  sealed class SafeBodaDbContext : DbContext //avoid inheriting from DbContext for security reasons
     {
         public SafeBodaDbContext(DbContextOptions<SafeBodaDbContext> options) : base(options)
         {
