@@ -5,7 +5,7 @@ using SafeBoda.Core;
 
 namespace SafeBoda.Infrastructure
 {
-    public  sealed class SafeBodaDbContext : IdentityDbContext<> //avoid inheriting from DbContext for security reasons
+    public  sealed class SafeBodaDbContext : IdentityDbContext<User> //avoid inheriting from DbContext for security reasons
     {
         public SafeBodaDbContext(DbContextOptions<SafeBodaDbContext> options) : base(options)
         {
