@@ -1,11 +1,16 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SafeBoda.Infrastructure;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add DbContext
 builder.Services.AddDbContext<SafeBodaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SafeBodaDb")));
+
+// Add Identity
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<SafeBodaDbContext>()
+    .AddDefaultTokenProviders();
 
 // Add trip repository
 builder.Services.AddScoped<ITripRepositoryDb, EfTripRepository>();
