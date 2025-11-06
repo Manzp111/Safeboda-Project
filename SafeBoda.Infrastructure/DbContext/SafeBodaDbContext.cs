@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using SafeBoda.Core;
 
 namespace SafeBoda.Infrastructure
 {
-    public  sealed class SafeBodaDbContext : DbContext //avoid inheriting from DbContext for security reasons
+    public  sealed class SafeBodaDbContext : IdentityDbContext<> //avoid inheriting from DbContext for security reasons
     {
         public SafeBodaDbContext(DbContextOptions<SafeBodaDbContext> options) : base(options)
         {
