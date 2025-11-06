@@ -7,8 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SafeBodaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SafeBodaDb")));
 
-// Add repository
+// Add trip repository
 builder.Services.AddScoped<ITripRepositoryDb, EfTripRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();// repository of users
+
 
 // Add controllers and Swagger
 builder.Services.AddControllers();
