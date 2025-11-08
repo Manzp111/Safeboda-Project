@@ -42,17 +42,27 @@ namespace SafeBoda.Api.Controllers
         public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
             var user = await _authService.LoginUserAsync(model);
-            if (user == null) return Unauthorized(new { success = false, message = "Invalid credentials" });
+            if (user == null)
+                return Unauthorized(new { success = false, message = "Invalid credentials" });
 
-            var token = _jwtGenerator.GenerateJwtToken(user);
+            var tokens = _jwtGenerator.GenerateTokens(user, HttpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown");
+
+            // TODO: (optional) Save the refresh token to DB if you want persistence
+            // await _authService.SaveRefreshTokenAsync(user.Id, tokens.RefreshToken.Token, tokens.RefreshToken.Expires);
 
             return Ok(new
             {
                 success = true,
                 message = "Login successful",
-                data = new { user, token }
+                data = new
+                {
+                    
+                    accessToken = tokens.AccessToken,
+                    refreshToken = tokens.RefreshToken.Token
+                }
             });
         }
+
 
         // get list of users api/auth/users
         // [Authorize]
