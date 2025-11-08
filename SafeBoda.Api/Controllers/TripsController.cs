@@ -3,9 +3,11 @@ using SafeBoda.Core;
 using SafeBoda.Infrastructure;
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SafeBoda.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("trip")]
     public class TripController : ControllerBase
