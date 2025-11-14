@@ -4,10 +4,11 @@ using SafeBoda.Infrastructure;
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace SafeBoda.Api.Controllers
 {
-    [Authorize("Admin")]
+    [Authorize]
     [ApiController]
     [Route("trip")]
     public class TripController : ControllerBase
@@ -19,10 +20,36 @@ namespace SafeBoda.Api.Controllers
             _tripRepo = tripRepo;
         }
 
+       
+
         [HttpGet("list")]
         public async Task<IActionResult> GetTrips()
         {
-            var trips = await _tripRepo.GetActiveTripsAsync();
+            var userId = User.FindFirst("UserId")?.Value;
+            var roles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+
+            List<Trip> trips;
+
+            if (roles.Contains("Admin"))
+            {
+                // Admin sees all trips
+                trips = await _tripRepo.GetActiveTripsAsync();
+            }
+            else if (roles.Contains("Driver"))
+            {
+                // Driver sees trips assigned to them
+                trips = await _tripRepo.GetTripsByDriverIdAsync(Guid.Parse(userId));
+            }
+            else if (roles.Contains("Rider"))
+            {
+                // Rider sees trips requested by them
+                trips = await _tripRepo.GetTripsByRiderIdAsync(Guid.Parse(userId));
+            }
+            else
+            {
+                return Forbid(); // no valid role
+            }
+
             return Ok(new
             {
                 success = true,
@@ -34,6 +61,7 @@ namespace SafeBoda.Api.Controllers
                 }
             });
         }
+
 
         [HttpGet("detail{id}")]
         public async Task<IActionResult> GetTrip(Guid id)
