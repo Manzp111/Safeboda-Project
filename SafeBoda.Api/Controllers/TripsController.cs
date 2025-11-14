@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SafeBoda.Api.Controllers
 {
-    [Authorize]
+    [Authorize("Admin")]
     [ApiController]
     [Route("trip")]
     public class TripController : ControllerBase

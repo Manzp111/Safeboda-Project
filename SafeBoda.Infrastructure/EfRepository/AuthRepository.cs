@@ -18,7 +18,26 @@ namespace SafeBoda.Infrastructure
         }
 
         //  Register for User
-        public async Task<bool> RegisterUserAsync(RegisterDto model)
+// public async Task<(bool success, string message,User? user)> RegisterUserAsync(RegisterDto model)
+// {
+//     var user = new User
+//     {
+//         UserName = model.Email,
+//         Email = model.Email,
+//         PhoneNumber = model.PhoneNumber,
+//         FirstName = model.FirstName,
+//         LastName = model.LastName
+//     };
+//
+//     var result = await _userManager.CreateAsync(user, model.Password);
+//     if (result.Succeeded)
+//         return (true, "User registered successfully");
+//
+//     var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+//     return (false, $"Registration failed: {errors}");
+// }
+
+        public async Task<(bool success, string message, User? user)> RegisterUserAsync(RegisterDto model)
         {
             var user = new User
             {
@@ -30,8 +49,18 @@ namespace SafeBoda.Infrastructure
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
-            return result.Succeeded;
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return (false, $"Registration failed: {errors}", null);
+            }
+
+           
+            await _userManager.AddToRoleAsync(user, model.Role); 
+            return (true, "User registered successfully", user);
         }
+
+
 
         //  Login metod User
         public async Task<UserResponseDto?> LoginUserAsync(LoginDto model)

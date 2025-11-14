@@ -12,11 +12,11 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add DbContext
+
 builder.Services.AddDbContext<SafeBodaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SafeBodaDb")));
 
-// Add Identity
+
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<SafeBodaDbContext>()
     .AddDefaultTokenProviders();
@@ -65,14 +65,14 @@ builder.Services.AddAuthentication(options =>
         
         );
 
-// Add trip repository
+
 builder.Services.AddScoped<ITripRepositoryDb, EfTripRepository>();
-builder.Services.AddScoped<IAuthService, AuthService>();// repository of users
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtGenerator>();
 
 
 
-// Add controllers and Swagger
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 // builder.Services.AddSwaggerGen();
@@ -121,5 +121,24 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+// In Program.cs, just before app.Run()
+
+// Create a scope to get the services
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    string[] roleNames = { "Admin", "Driver", "Rider" };
+
+    foreach (var roleName in roleNames)
+    {
+        var roleExist = await roleManager.RoleExistsAsync(roleName);
+        if (!roleExist)
+        {
+            // create the roles and seed them to the database
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+}
 
 app.Run();

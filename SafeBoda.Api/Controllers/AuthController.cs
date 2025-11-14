@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SafeBoda.Core;
 
 using SafeBoda.Authenticationkey;
 
@@ -13,13 +15,17 @@ namespace SafeBoda.Api.Controllers
         
         
         private readonly IAuthService _authService;
+        private readonly IConfiguration _configuration;
+        private readonly UserManager<User> _userManager;
        
         private readonly JwtGenerator _jwtGenerator;
 
-        public AuthController(IAuthService authService, JwtGenerator jwtGenerator)
+        public AuthController(IAuthService authService, JwtGenerator jwtGenerator, IConfiguration configuration, UserManager<User> userManager)
         {
             _authService = authService;
             _jwtGenerator = jwtGenerator;
+            _configuration = configuration;
+            _userManager = userManager;
         }
 
         // post: api/auth/register
@@ -29,10 +35,12 @@ namespace SafeBoda.Api.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            var (success, message) = await _authService.RegisterUserAsync(model);
+            var (success, message,user) = await _authService.RegisterUserAsync(model);
 
             if (!success)
                 return BadRequest(new { success = false, message });
+            
+            await _userManager.AddToRoleAsync(user, "Rider");
 
             return Ok(new { success = true, message });
         }
